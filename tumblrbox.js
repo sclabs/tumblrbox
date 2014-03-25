@@ -73,7 +73,7 @@
       load_file('http://picuous.github.com/tumblrbox/lib/jquery.fancybox.min.js', function() {
         console.debug('loaded fancybox');
         
-        var $tumblr_pics = $('a[href*=".media.tumblr.com/tumblr"]>img[src*=".media.tumblr.com/tumblr"]').parent();
+        var $tumblr_pics = $('a[href*=".tumblr.com"]>img[src*=".media.tumblr.com"]').parent();
         $tumblr_pics.fancybox({
           'type': 'image',
           'transitionIn': 'elastic',
